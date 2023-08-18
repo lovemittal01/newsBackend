@@ -27,4 +27,4 @@ app.get("/get-news", async function (req, res) {
   res.send({ news: result });
 });
 
-app.listen(3001);
+app.listen(3001, console.log("Api is running on port 3000"));
