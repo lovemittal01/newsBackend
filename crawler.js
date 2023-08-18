@@ -34,7 +34,7 @@ const getNewsData = async () => {
             )`
           );
         } catch (error) {
-          throw Error(error);
+          console.log(error);
         }
       });
     });
