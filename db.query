@@ -1,0 +1,12 @@
+show databases;
+create database news;
+use news;
+CREATE TABLE articles (
+    id int unique AUTO_INCREMENT,
+    link varchar(200),
+    title varchar(200),
+    snippet varchar(200),
+    thumbnail varchar(200),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
