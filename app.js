@@ -5,7 +5,11 @@ const crawler = require("./crawler.js");
 
 const app = express();
 app.use(express.json());
-app.use(cors({}));
+app.use(
+  cors({
+    origin: "http://18.221.59.245:3001",
+  })
+);
 app.use(
   express.urlencoded({
     extended: true,
